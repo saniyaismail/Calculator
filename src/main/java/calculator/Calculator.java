@@ -9,6 +9,7 @@ public class Calculator {
         return Math.sqrt(x);
     }
 
+
     public static BigInteger factorial(int n) {
         if (n < 0) throw new IllegalArgumentException("Cannot factorial negative number");
         BigInteger result = BigInteger.ONE;
