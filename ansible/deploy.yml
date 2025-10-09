@@ -1,0 +1,17 @@
+- name: Pull Docker Image of Calculator
+  hosts: all
+
+  tasks:
+    - name: Pull Image
+      shell: docker pull saniyaismail999/calculator:1.0
+
+    - name: Stop existing container if running
+      shell: docker stop calculator || true
+      ignore_errors: yes
+
+    - name: Remove existing container if exists
+      shell: docker rm calculator || true
+      ignore_errors: yes
+
+#    - name: Run the container
+#      shell: docker run -it --name calculator saniyaismail999/calculator:1.0
