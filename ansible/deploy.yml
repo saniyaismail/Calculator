@@ -13,5 +13,5 @@
       shell: docker rm calculator || true
       ignore_errors: yes
 
-#    - name: Run the container
-#      shell: docker run -it --name calculator saniyaismail999/calculator:1.0
+    - name: Run the container
+      shell: docker run -it -d --name calculator saniyaismail999/calculator:1.0
