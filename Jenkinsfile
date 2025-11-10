@@ -50,7 +50,7 @@ pipeline {
 
         stage('Stage 5: Clean docker images'){
             steps{
-                echo 'Running Ansible playbook to deploy container...'
+                echo 'Cleaning docker images...'
                 sh 'docker container prune -f'
                 sh 'docker image prune -f'
             }

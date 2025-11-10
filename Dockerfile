@@ -1,4 +1,4 @@
-# Use OpenJDK 17
+# Use OpenJDK 21
 FROM eclipse-temurin:21-jdk
 
 # Set working directory

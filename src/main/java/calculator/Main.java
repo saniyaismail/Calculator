@@ -9,7 +9,7 @@ public class Main {
         boolean running = true;
 
         while (running) {
-//            System.out.println("hello");
+            System.out.println("hello");
             System.out.println("\n=== Calculator ===");
             System.out.println("1) Square root (√x)");
             System.out.println("2) Factorial (!x)");
